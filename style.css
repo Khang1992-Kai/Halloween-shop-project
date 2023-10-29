@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/* NAVBAR */
+.big_box{
+    width: 100%;
+    height: 80vh;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    padding-top:10vh ;
+    position: relative;
+}
+.mySlides{
+    width: 100%;
+    height: 100%;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  } 
+.nav_bar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color:   black;
+    color: whitesmoke;
+    z-index: 9999;
+}
+.nav-left{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fonts_icon{
+    width: 25%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+.task{
+    width: 75%;
+    height: 80%;
+    margin: 10px;
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.task-box{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_bar{
+        width: 40%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        justify-content: space-between;
+        display: flex;
+        margin: 2px;
+        
+}
+.fa-solid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.task {
+    overflow: hidden;
+}
+.task a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+.task-box a:hover {
+    border-bottom: 5px solid red;
+ }
+.Sign-In-Button{
+    font-size: 20px;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    border: black;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.Sign-In-Button:hover {
+    background-color: #f44336;
+  }
+ /* NAVBAR */
+ /* CONTENT */
+.box{
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    background-color:   #1a1a26;
+}
+.main-container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.box-container-1{
+    width: 45%;
+    height: 48vh;
+    right: 40px;
+    justify-content: left;
+    border-radius: 10px;
+}
+.box-container-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box-container-2{
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.small-box-2 img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.small-box-2{
+    width: 90%;
+    height: 30%;
+
+    margin: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+.sb-price{
+    width: 50%;
+    height: 100%;
+}
+.sb-price p{
+    font-size: 15px;
+}
+.buy-button{
+   display: flex;
+   justify-content: center;
+}
+.buy-button button{
+    border-radius: 15px;
+    width: 40%;
+    background-color: red;
+    cursor: pointer;
+}
+.sb-rpice-1{
+    width: 50%;
+    height: 100%;
+}
+.box-title-1{
+    color: white;
+    font-size: 34px;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.small-box-2 p{
+    display: block;
+}
+.box-2{
+    width: 100%;
+    height: 120vh;
+    background-color:   #1a1a26;
+}
+.box-container-3{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.price-1 p{
+    display: flex;
+    justify-content: center;
+}
+.small-box-3{
+    width: 45%;
+    margin-top: 20px;
+    height: 25vh;
+    margin: 5px;
+    text-align: center;
+}
+.small-box-3 img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-title-2{
+    color: white;
+    font-size: 34px;
+    width: 80%;
+    margin: auto;
+}
+.box-3{
+    width: 100%;
+    height: 80vh;
+    background-color:   #1a1a26;
+}
+.box-container-4{
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.small-box-4{
+    width: 45%;
+    height: 30vh;
+    margin: 10px;
+    border-radius: 15px;
+}
+.small-box-4 img{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+}
+.box-title-3{
+    color: white;
+    font-size: 34px;
+    width: 80%;
+    margin: auto;
+}
+.box-title-3{
+    color: white;
+    font-size: 34px;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.box-4{
+    width: 100%;
+    height: 80vh;
+    background-color:   #1a1a26;
+}
+.box-container-5{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.small-box-5{
+    width: 45%;
+    height: 37vh;
+    margin: 10px;
+    border-radius: 15px;
+}
+.small-box-5 img{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+}
+.box-title-4{
+    color: white;
+    font-size: 34px;
+    width: 80%;
+    margin: auto;
+}
+.box-5{
+    width: 100%;
+    height: 90vh;
+    background-color:   #1a1a26;
+}
+.box-container-6{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.small-box-6{
+    width: 30%;
+    height: 37vh;
+    background-color: wheat;
+    margin: 15px;
+    border-radius: 10px;
+}
+.small-box-6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box-title-5{
+    color: white;
+    font-size: 34px;
+    width: 90%;
+    margin: auto;
+}
+.tiny-box{
+    width: 100%;
+    height: 30%;
+}
+/* CONTENT */
+/* FOOTER */
+.footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: black;
+}
+.info{
+    width: 90%;
+    height: 50%;
+    font-size: 20px;
+    margin: auto;
+}
+hr{
+    margin: 15px;
+}
+.fa-spider{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.info-2{
+    width: 60%;
+    height: 30%;
+}
+.up{
+    width: 30%;
+    height: 30%;
+}
+.myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+.myBtn:hover {
+    background-color: #555;
+  }
+#myBtn{
+    border: black;
+    background-color: black;
+    color: black;
+    cursor: pointer;
+}
+#myBtn:hover{
+    background-color: red;
+}
+/* FOOTER */
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.main_tag{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1163430.jpg);
+    background-repeat: no-repeat;
+    background-size : 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 30%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10%;
+    box-shadow: 10px;
+}   
+.title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 15px;
+}
+.form{
+    width: 100%;
+    height: 60%;
+    padding: 0px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+input[type=text]{
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #1a1a26;
+}
+input[type=email]{
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #1a1a26;
+}input[type=password]{
+    box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #1a1a26;
+}
+.button{
+    width: 20%;
+    height: 3vh;
+    border-radius: 10px;
+    border: #ffffff;
+}
+.button{
+    cursor: pointer;
+}
+.button1{
+    background-color: blue;
+}
+.button2{
+    margin-top: 5px;
+}
+.button2 svg{
+    width: 80%;
+    height: 60%;
+    align-items: center;
+    margin-top: 2px;
+}
+.button3{
+    background-color: black;
+}
+.button4{
+    background-color: green;
+}
+.sub-button{
+    font-size: 20px;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    border: white;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.sub-button:hover {
+    background-color: black;
+    color: white;
+  }
+    </style>
+</head>
+<body>
+    <div class="main_tag">
+        <div class="box">
+            <div class="title">Sign Up</div>
+            <div class="form">
+                <form id="form_submit" action=""style="display:flex; flex-direction:column; width: 80%;gap: 10px;;">
+                    <label for="name_tag"><b>Username</b></label>
+                    <input type="text" name="Usernae" placeholder="Username" >
+                    <label for="email_tag"><b>Your email address</b></label>
+                    <input type="email" name="Your email address" placeholder="Your email address" >
+                    <label for="password_tag"><b>Your password</b></label>
+                    <input type="password" name="Your password" placeholder="Your password" >
+                    <label for="repassword_tag"><b>Re-enter your password</b></label>
+                    <input type="password" name="Your password" placeholder="Your password">
+                    <div class="log-in">
+                        <button class="button button1"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></button>
+                        <button class="button button2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="google"><path fill="#fbbb00" d="M113.47 309.408 95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z"></path><path fill="#518ef8" d="M507.527 208.176C510.467 223.662 512 239.655 512 256c0 18.328-1.927 36.206-5.598 53.451-12.462 58.683-45.025 109.925-90.134 146.187l-.014-.014-73.044-3.727-10.338-64.535c29.932-17.554 53.324-45.025 65.646-77.911h-136.89V208.176h245.899z"></path><path fill="#28b446" d="m416.253 455.624.014.014C372.396 490.901 316.666 512 256 512c-97.491 0-182.252-54.491-225.491-134.681l82.961-67.91c21.619 57.698 77.278 98.771 142.53 98.771 28.047 0 54.323-7.582 76.87-20.818l83.383 68.262z"></path><path fill="#f14336" d="m419.404 58.936-82.933 67.896C313.136 112.246 285.552 103.82 256 103.82c-66.729 0-123.429 42.957-143.965 102.724l-83.397-68.276h-.014C71.23 56.123 157.06 0 256 0c62.115 0 119.068 22.126 163.404 58.936z"></path></svg></button>
+                        <button class="button button3"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></button>
+                        <button class="button button4"><i class="fa-brands fa-xbox" style="color: #ffffff;"></i></button>
+                    </div>
+                    <input type="Submit" name="Sign in" placeholder="Sign in" class="sub-button">
+                 </form>
+    </div>
+</body>
+<script>
+    function getData(form) {
+      var formData = new FormData(form);
+      return Object.fromEntries(formData);
+    }
+
+    document.getElementById("form_submit").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = getData(e.target);
+      console.log(data)
+    });
+
+</script>
+</html>
